@@ -1,0 +1,28 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%; /* Ensure it takes full width of its container */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    overflow: hidden; /* Prevent overflow on hover */
+}
+
+.banner-image {
+    width: 90%; /* Start slightly smaller */
+    max-width: 600px; /* Maximum width */
+    height: 70%; /* Maintain aspect ratio */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: width 0.5s ease, transform 0.5s ease, opacity 0.3s ease;
+}
+
+.banner-image:hover {
+    width: 100%; /* Expand to full container width */
+    max-width: 100%; /* Ensure full fit */
+    transform: scale(1); /* Prevent additional scaling */
+    opacity: 1; /* Keep full opacity */
+}

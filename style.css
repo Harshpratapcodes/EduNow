@@ -84,3 +84,30 @@ svg#freepik_stories-college-students.animated #freepik--Plants--inject-27 {
         transform: translateY(0px);
     }
 }
+
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 130px;
+    height: auto;
+    background: none;
+}
+
+#small_u{
+    width: 1000px;
+}
+

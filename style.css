@@ -111,3 +111,16 @@ svg#freepik_stories-college-students.animated #freepik--Plants--inject-27 {
     width: 1000px;
 }
 
+.service-card {
+    transition: all 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  .icon-container {
+    transition: all 0.3s ease;
+  }
+  .service-card:hover .icon-container {
+    background-color: #4338ca;
+    color: white;
+  }

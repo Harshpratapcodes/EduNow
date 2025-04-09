@@ -25,14 +25,40 @@
 </head>
 <body class="bg-gray-50">
 
-    <header class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 backdrop-blur-md py-2 px-4 md:px-12 shadow-lg rounded-2xl border border-gray-200 w-[90%] max-w-8xl z-50">
+    <header class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 backdrop-blur-md py-2 px-4 md:pl-4 md:pr-8 shadow-lg rounded-2xl border border-gray-200 w-[90%] max-w-8xl z-50">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Left: Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/EduNow logo.png" alt="EduNow Careers Logo" class="h-28 w-auto">
+            </a>
+    
+            <!-- Right: Navigation -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-2xl text-gray-600 hover:text-[#fc6f06] transition duration-300">Home</a>
+                <a href="about_us.html" class="text-2xl text-gray-600 hover:text-[#fc6f06] transition duration-300">About Us</a>
+                <a href="#services" class="text-2xl text-gray-600 hover:text-[#fc6f06] transition duration-300">Services</a>
+                <a href="#contact" class="text-2xl text-gray-600 hover:text-[#fc6f06] transition duration-300">Contact</a>
+                <a href="#" id="openModalBtn"
+                    class="consult-now-btn ml-6 inline-flex items-center px-6 py-3 rounded-lg text-white font-semibold transition-all duration-300 
+                    bg-gradient-to-r from-secondary to-primary hover:from-secondary hover:to-primary
+                    hover:-translate-y-1 hover:shadow-xl text-2xl">
+                    Consult Now
+                    <svg aria-hidden="true" viewBox="0 0 10 10" height="12" width="12" fill="none" class="ml-2 stroke-white stroke-2">
+                        <path d="M0 5h7" class="transition opacity-0 group-hover:opacity-100"></path>
+                        <path d="M1 1l4 4-4 4" class="transition group-hover:translate-x-[3px]"></path>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+     <!-- <header class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 backdrop-blur-md py-2 px-4 md:px-12 shadow-lg rounded-2xl border border-gray-200 w-[90%] max-w-8xl z-50">
+        <div class="container mx-auto flex justify-between items-center">
+
             <a href="#" class="flex items-center">
                 <img src="images/EduNow logo.png" alt="EduNow Careers Logo" class="h-20 w-auto">
             </a>
     
-            <!-- Right: Navigation -->
             <nav class="hidden md:flex items-center space-x-6">
                 <a href="#home" class="text-xl text-gray-600 hover:text-[#fc6f06] transition duration-300">Home</a>
                 <a href="about_us.html" class="text-xl text-gray-600 hover:text-[#fc6f06] transition duration-300">About Us</a>
@@ -50,7 +76,7 @@
                 </a>
             </nav>
         </div>
-    </header>
+    </header>  -->
     
 <!-- Modal Container -->
 <div id="consultationModal"
@@ -155,11 +181,51 @@
     </div>
     
 
-    <section id="home" class="mt-6 pt-18 md:pt-32 md:pb-4 px-6 md:px-12 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center mb-8">
+    <!-- <section id="home" class="mt-6 pt-18 md:pt-32 md:pb-4 px-6 md:px-12 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center mb-8"> -->
+            <!-- Left Content: Center-Aligned -->
+            <!-- <div class="flex flex-col justify-center h-full px-4 ml-10 md:px-8 lg:px-4">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight mb-6 text-center md:text-left animate-fadeIn">
+                    Navigate Your Future <br>
+                    <span class="text-[#fc6f06]">with Confidence</span> 
+                </h1>
+                <p class="text-gray-light text-xl md:text-xl font-medium mb-4 max-w-md leading-relaxed text-center md:text-left">
+                    Bespoke, Exclusive, and Comprehensive
+                </p>
+                <p class="text-gray-muted text-base md:text-lg mb-6 max-w-md leading-relaxed text-center md:text-left">
+                    Career counseling tailored for undergraduate & postgraduate admissions to top universities worldwide.
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#contact" class="mt-4 inline-block bg-[#fc6f06] hover:primary text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 animate-bounce">
+                        Let's Connect
+                    </a>                   
+                </div>
+            </div> -->
+    
+            <!-- Right Content: Full-Sized Banner Image -->
+            <!-- <div class="w-[90%] md:w-[80%] lg:w-[98%] h-auto p-0 flex justify-center items-center mx-0">
+                <div class="w-full h-auto max-w-[600px] rounded-2xl shadow-lg overflow-hidden flex items-center justify-center">
+                    <img src="images/Untitled design (3).png" alt="Career Counseling Banner" 
+                         class="w-full h-auto object-contain rounded-2xl transition-transform duration-500 hover:scale-105 hover:opacity-90">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+
+
+
+     <section id="home" class="relative pt-18 md:pt-32 md:pb-4 px-6 md:px-12 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="images\unniversity.jpg" alt="Background" 
+            class="w-full h-full object-cover opacity-60 brightness-100 contrast-110">
+        </div>
+        <!-- Foreground Content -->
+        <div class="relative z-10 container mx-auto grid md:grid-cols-2 gap-12 items-center mb-32 mt-16">
             <!-- Left Content: Center-Aligned -->
             <div class="flex flex-col justify-center h-full px-4 ml-10 md:px-8 lg:px-4">
-                <h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight mb-6 text-center md:text-left animate-fadeIn">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-[#1b5082] tracking-tight mb-6 text-center md:text-left animate-fadeIn">
                     Navigate Your Future <br>
                     <span class="text-[#fc6f06]">with Confidence</span> 
                 </h1>
@@ -176,17 +242,43 @@
                 </div>
             </div>
     
-            <!-- Right Content: Full-Sized Banner Image -->
+             <!-- Right Content: Full-Sized Banner Image  -->
             <div class="w-[90%] md:w-[80%] lg:w-[98%] h-auto p-0 flex justify-center items-center mx-0">
                 <div class="w-full h-auto max-w-[600px] rounded-2xl shadow-lg overflow-hidden flex items-center justify-center">
                     <img src="images/Untitled design (3).png" alt="Career Counseling Banner" 
                          class="w-full h-auto object-contain rounded-2xl transition-transform duration-500 hover:scale-105 hover:opacity-90">
                 </div>
+            </div> 
+        </div>
+    </section> 
+    
+
+    <section id="welcome" class="py-16 px-4 md:px-4 bg-[#f8f9fa] w-full">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between">
+            
+            <!-- Left: Centered Image -->
+            <div class="w-full md:w-1/2 flex justify-center mr-4">
+                <img src="images/harvard .jpg" alt="Harvard" class="max-w-full">
             </div>
+    
+            <!-- Right: About Us Content -->
+            <div class="w-full md:w-1/2 ml-4 text-center md:text-left md:ml-10">
+                <h2 class="text-5xl font-extrabold text-primary mb-6 tracking-tight animate-fadeIn">
+                    Welcome to <span class="text-[#fc6f06]">EduNow Careers</span> 
+               </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    At <span class="text-[#fc6f06] font-semibold">EduNow Careers</span>, we understand that every student's journey is unique, and reaching your dream college or career requires more than just hard work — it requires the right guidance, personalized support, and expert strategy.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                    Our team of experienced mentors and advisors provides tailored, one-on-one support to align with your individual goals, strengths, and aspirations. From college admissions to career planning, <span class="text-[#fc6f06]">EduNow Careers</span> is committed to guiding you toward success.
+                </p>
+            </div>
+            
         </div>
     </section>
-
-    <div class="swiper-container">
+    
+    
+ <div class="swiper-container">
         <div class="swiper-wrapper">
             <!-- Add your 40 college logo images here -->
            
@@ -215,55 +307,6 @@
             <!-- Repeat for all 40 logos -->
         </div>
     </div>
-
-    <!-- <section id="welcome" class="py-16 px-4 md:px-8 bg-[#f8f9fa] w-full">
-        <div class="max-w-9xl mx-auto flex flex-col md:flex-row items-center justify-between">
-            
-            <div class="w-full mr-20 md:w-1/2 flex justify-center">
-             <img src="images\harvard .jpg" alt="Harvard">
-            </div>
-            <div class="w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0 md:ml-10">
-                <h2 class="text-5xl font-extrabold text-primary mb-6 tracking-tight animate-fadeIn">
-                    Welcome to <span class="text-[#fc6f06]">EduNow Careers</span> 
-               </h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    At <span class="text-[#fc6f06] font-semibold">EduNow Careers</span>, we understand that every student's journey is unique, and reaching your dream college or career requires more than just hard work — it requires the right guidance, personalized support, and expert strategy.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed mt-4">
-                    Our team of experienced mentors and advisors provides tailored, one-on-one support to align with your individual goals, strengths, and aspirations. From college admissions to career planning,<span class="text-[#fc6f06]">EduNow Careers</span> is committed to guiding you toward success.
-                </p>
-                
-            </div>
-            
-        </div>
-    </section> -->
-
-    <section id="welcome" class="py-16 px-4 md:px-4 bg-[#f8f9fa] w-full">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between">
-            
-            <!-- Left: Centered Image -->
-            <div class="w-full md:w-1/2 flex justify-center mr-4">
-                <img src="images/harvard .jpg" alt="Harvard" class="max-w-full">
-            </div>
-    
-            <!-- Right: About Us Content -->
-            <div class="w-full md:w-1/2 ml-4 text-center md:text-left md:ml-10">
-                <h2 class="text-5xl font-extrabold text-primary mb-6 tracking-tight animate-fadeIn">
-                    Welcome to <span class="text-[#fc6f06]">EduNow Careers</span> 
-               </h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    At <span class="text-[#fc6f06] font-semibold">EduNow Careers</span>, we understand that every student's journey is unique, and reaching your dream college or career requires more than just hard work — it requires the right guidance, personalized support, and expert strategy.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed mt-4">
-                    Our team of experienced mentors and advisors provides tailored, one-on-one support to align with your individual goals, strengths, and aspirations. From college admissions to career planning, <span class="text-[#fc6f06]">EduNow Careers</span> is committed to guiding you toward success.
-                </p>
-            </div>
-            
-        </div>
-    </section>
-    
-    
-
 
 <!-- Services Section -->
 <section id="services" class="w-full bg-gradient-to-b from-gray-100 to-white py-16 px-6">
